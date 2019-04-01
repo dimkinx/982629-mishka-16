@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Остроухов](https://up.htmlacademy.ru/adaptive/16/user/982629).
-* Наставник: `Неизвестно`.
+* Наставник: [Юлия Антонова](https://up.htmlacademy.ru/adaptive/16/user/39082).
 
 ---
 
