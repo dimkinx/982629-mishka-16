@@ -78,5 +78,20 @@
         </a>
       </p>
     </footer>
+    <section class="modal modal-size">
+      <h2 class="modal-size__title">Добавить в корзину</h2>
+      <form class="modal-size__form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="modal-size__fieldset">
+          <legend class="modal-size__legend">Выберите размер:</legend>
+          <label class="visually-hidden" for="size-s">Маленький (S)</label>
+          <input class="modal-size__input" id="size-s" type="radio" name="size" value="S" checked>
+          <label class="visually-hidden" for="size-m">Средний (M)</label>
+          <input class="modal-size__input" id="size-m" type="radio" name="size" value="M">
+          <label class="visually-hidden" for="size-l">Большой (L)</label>
+          <input class="modal-size__input" id="size-l" type="radio" name="size" value="L">
+        </fieldset>
+        <button class="modal-size__btn" type="submit">Добавить</button>
+      </form>
+    </section>
   </body>
 </html>
