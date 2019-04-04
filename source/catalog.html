@@ -73,12 +73,20 @@
       <form class="modal-add__form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="modal-add__fieldset">
           <legend class="modal-add__legend">Выберите размер:</legend>
-          <label class="visually-hidden" for="size-s">Маленький (S)</label>
-          <input class="modal-add__input" id="size-s" type="radio" name="size" value="S" checked>
-          <label class="visually-hidden" for="size-m">Средний (M)</label>
-          <input class="modal-add__input" id="size-m" type="radio" name="size" value="M">
-          <label class="visually-hidden" for="size-l">Большой (L)</label>
-          <input class="modal-add__input" id="size-l" type="radio" name="size" value="L">
+          <ul class="modal-add__choice-list choice-list">
+            <li class="choice-list__item">
+              <label class="visually-hidden" for="size-s">Маленький (S)</label>
+              <input class="choice-list__input" id="size-s" type="radio" name="size" value="S" checked>
+            </li>
+            <li class="choice-list__item">
+              <label class="visually-hidden" for="size-m">Средний (M)</label>
+              <input class="choice-list__input" id="size-m" type="radio" name="size" value="M">
+            </li>
+            <li class="choice-list__item">
+              <label class="visually-hidden" for="size-l">Большой (L)</label>
+              <input class="choice-list__input" id="size-l" type="radio" name="size" value="L">
+            </li>
+          </ul>
         </fieldset>
         <button class="modal-add__btn" type="submit">Добавить</button>
       </form>
