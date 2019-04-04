@@ -12,7 +12,7 @@
       <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <nav class="page-header__nav site-menu">
         <ul class="site-menu__list">
-          <li class="site-menu__item"><a class="site-menu__link" href="#">Каталог товаров</a></li>
+          <li class="site-menu__item"><a class="site-menu__link" href="catalog.html">Каталог товаров</a></li>
           <li class="site-menu__item"><a class="site-menu__link" href="#">Вязание на заказ</a></li>
         </ul>
       </nav>
@@ -78,19 +78,19 @@
         </a>
       </p>
     </footer>
-    <section class="modal modal-size">
-      <h2 class="modal-size__title">Добавить в корзину</h2>
-      <form class="modal-size__form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="modal-size__fieldset">
-          <legend class="modal-size__legend">Выберите размер:</legend>
+    <section class="modal modal-add">
+      <h2 class="modal-add__title">Добавить в корзину</h2>
+      <form class="modal-add__form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="modal-add__fieldset">
+          <legend class="modal-add__legend">Выберите размер:</legend>
           <label class="visually-hidden" for="size-s">Маленький (S)</label>
-          <input class="modal-size__input" id="size-s" type="radio" name="size" value="S" checked>
+          <input class="modal-add__input" id="size-s" type="radio" name="size" value="S" checked>
           <label class="visually-hidden" for="size-m">Средний (M)</label>
-          <input class="modal-size__input" id="size-m" type="radio" name="size" value="M">
+          <input class="modal-add__input" id="size-m" type="radio" name="size" value="M">
           <label class="visually-hidden" for="size-l">Большой (L)</label>
-          <input class="modal-size__input" id="size-l" type="radio" name="size" value="L">
+          <input class="modal-add__input" id="size-l" type="radio" name="size" value="L">
         </fieldset>
-        <button class="modal-size__btn" type="submit">Добавить</button>
+        <button class="modal-add__btn" type="submit">Добавить</button>
       </form>
     </section>
   </body>
