@@ -2,17 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <title>HTML Academy: Мишка — каталог</title>
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-img" src="https://placehold.it/200x100" width="200" height="100" alt="Логотип интернет-магазина «Мишка»">
       </a>
       <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <nav class="page-header__nav site-menu">
         <ul class="site-menu__list">
-          <li class="site-menu__item"><a class="site-menu__link" href="catalog.html">Каталог товаров</a></li>
+          <li class="site-menu__item"><a class="site-menu__link site-menu__link--current">Каталог товаров</a></li>
           <li class="site-menu__item"><a class="site-menu__link" href="form.html">Вязание на заказ</a></li>
         </ul>
       </nav>
@@ -24,44 +24,40 @@
       <a class="page-header__basket-link" href="#">Корзина: пока пуста</a>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">«Мишка» — интернет-магазин милых вещиц для дома, ручной работы</h1>
-      <section class="page-main__products-sections products-sections">
-        <h2 class="products-sections__title">Милые штуки ручной работы для дома</h2>
-        <ul class="products-sections__list">
-          <li class="products-sections__item"><a class="products-sections__link" href="#">Предметы интерьера</a></li>
-          <li class="products-sections__item"><a class="products-sections__link" href="#">Детские игрушки</a></li>
-        </ul>
-      </section>
-      <section class="page-main__popular-product popular-product">
-        <h2 class="popular-product__title">Вязаные корзинки</h2>
-        <p class="popular-product__lead">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <table class="popular-product__benefits">
-          <tr>
-            <th>Цвет:</th>
-            <td>«Тиффани»/серый</td>
-          </tr>
-          <tr>
-            <th>Диаметр:</th>
-            <td>25 см</td>
-          </tr>
-          <tr>
-            <th>Высота:</th>
-            <td>15 см</td>
-          </tr>
-        </table>
-        <img class="popular-product__img" src="https://placehold.it/200x300" width="200" height="300" alt="Вязаные корзинки">
-        <p class="popular-product__price">Цена: 990 руб.</p>
-        <a class="btn-link popular-product__order-link" href="#">Заказать</a>
-      </section>
-      <section class="page-main__about-us about-us">
-        <h2 class="about-us__title">Коротко о нас:</h2>
-        <ul class="about-us__list">
-          <li class="about-us__item">Экологически чистые материалы</li>
-          <li class="about-us__item">Скандинавский стиль по российской цене</li>
-          <li class="about-us__item">Увеличивает лайки на фотографиях</li>
-          <li class="about-us__item">Связано вручную с любовью и умилением</li>
-          <li class="about-us__item">Поддержка отечественного производителя</li>
-          <li class="about-us__item">Поставляется в подарочной упаковке</li>
+      <h1 class="page-main__title">Каталог товаров</h1>
+      <section class="page-main__products products">
+        <h2 class="visually-hidden">Список товаров</h2>
+        <ul class="products__list">
+          <li class="products__item product-card">
+            <a class="product-card__link" href="#">
+              <img class="product-card__img" src="https://placehold.it/200x300" width="200" height="300" alt="Вязаный зайчик">
+            </a>
+            <a class="product-card__link" href="#">
+              <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
+            </a>
+            <p class="product-card__desc">Рост 30 см, вес 200 г</p>
+            <p class="product-card__price">1 200 руб. <a class="product-card__add" href="#"><span class="visually-hidden">Добавить в корзину</span></a></p>
+          </li>
+          <li class="products__item product-card">
+            <a class="product-card__link" href="#">
+              <img class="product-card__img" src="https://placehold.it/200x300" width="200" height="300" alt="Вязаная корзина">
+            </a>
+            <a class="product-card__link" href="#">
+              <h3 class="product-card__title">Корзинка для белья</h3>
+            </a>
+            <p class="product-card__desc">Диаметр 15 см, высота 10 см</p>
+            <p class="product-card__price">690 руб. <a class="product-card__add" href="#"><span class="visually-hidden">Добавить в корзину</span></a></p>
+          </li>
+          <li class="products__item product-card">
+            <a class="product-card__link" href="#">
+              <img class="product-card__img" src="https://placehold.it/200x300" width="200" height="300" alt="Большая вязаная корзина">
+            </a>
+            <a class="product-card__link" href="#">
+              <h3 class="product-card__title">Большая корзинка для игрушек</h3>
+            </a>
+            <p class="product-card__desc">Диаметр 30 см, высота 30 см</p>
+            <p class="product-card__price">1 500 руб. <a class="product-card__add" href="#"><span class="visually-hidden">Добавить в корзину</span></a></p>
+          </li>
         </ul>
       </section>
       <!-- module2-task2 -->
