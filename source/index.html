@@ -5,14 +5,13 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
-    <!-- Travis CI test #2 -->
     <header class="page-header">
       <a class="page-header__logo">
         <img class="page-header__logo-img" src="https://placehold.it/200x100" width="200" height="100" alt="Логотип интернет-магазина «Мишка»">
       </a>
-      <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <nav class="page-header__nav site-menu">
-        <ul class="site-menu__list">
+      <nav class="page-header__nav navigation">
+        <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="navigation__site-menu site-menu">
           <li class="site-menu__item">
             <a class="site-menu__link" href="catalog.html">Каталог товаров</a>
           </li>
@@ -20,13 +19,19 @@
             <a class="site-menu__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
+        <ul class="navigation__user-menu user-menu">
+          <li class="user-menu__item">
+            <form class="user-menu__search search-form" action="https://echo.htmlacademy.ru" method="get">
+              <label class="visually-hidden" for="search">Поиск по сайту</label>
+              <input class="search-form__input" id="search" type="search" name="search-message" placeholder="Поиск по сайту">
+              <button class="search-form__btn" type="submit"><span class="visually-hidden">Найти</span></button>
+            </form>
+          </li>
+          <li class="user-menu__item">
+            <a class="user-menu__basket-link" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
       </nav>
-      <form class="page-header__search search-form" action="https://echo.htmlacademy.ru" method="get">
-        <label class="visually-hidden" for="search">Поиск по сайту</label>
-        <input class="search-form__input" id="search" type="search" name="search-message" placeholder="Поиск по сайту">
-        <button class="search-form__btn" type="submit"><span class="visually-hidden">Найти</span></button>
-      </form>
-      <a class="page-header__basket-link" href="#">Корзина: пока пуста</a>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">«Мишка» — интернет-магазин милых вещиц для дома, ручной работы</h1>
