@@ -9,19 +9,29 @@
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-img" src="https://placehold.it/200x100" width="200" height="100" alt="Логотип интернет-магазина «Мишка»">
       </a>
-      <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <nav class="page-header__nav site-menu">
-        <ul class="site-menu__list">
-          <li class="site-menu__item"><a class="site-menu__link site-menu__link--current">Каталог товаров</a></li>
-          <li class="site-menu__item"><a class="site-menu__link" href="form.html">Вязание на заказ</a></li>
+      <nav class="page-header__nav navigation">
+        <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="navigation__site-menu site-menu">
+          <li class="site-menu__item">
+            <a class="site-menu__link site-menu__link--current">Каталог товаров</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="navigation__user-menu user-menu">
+          <li class="user-menu__item">
+            <form class="user-menu__search search-form" action="https://echo.htmlacademy.ru" method="get">
+              <label class="visually-hidden" for="search">Поиск по сайту</label>
+              <input class="search-form__input" id="search" type="search" name="search-message" placeholder="Поиск по сайту">
+              <button class="search-form__btn" type="submit"><span class="visually-hidden">Найти</span></button>
+            </form>
+          </li>
+          <li class="user-menu__item">
+            <a class="user-menu__basket-link" href="#">Корзина: пока пуста</a>
+          </li>
         </ul>
       </nav>
-      <form class="page-header__search search-form" action="https://echo.htmlacademy.ru" method="get">
-        <label class="visually-hidden" for="search">Поиск по сайту</label>
-        <input class="search-form__input" id="search" type="search" name="search-message" placeholder="Поиск по сайту">
-        <button class="search-form__btn" type="submit"><span class="visually-hidden">Найти</span></button>
-      </form>
-      <a class="page-header__basket-link" href="#">Корзина: пока пуста</a>
     </header>
     <main class="page-main">
       <h1 class="page-main__title">Каталог товаров</h1>
@@ -60,13 +70,26 @@
           </li>
         </ul>
       </section>
-      <!-- module2-task2 -->
+      <article class="page-main__manufacture manufacture">
+        <h2 class="manufacture__title">Процесс производства</h2>
+        <div class="manufacture__video-container video-container">
+          <button class="video-container__btn"><span class="visually-hidden">Смотреть</span></button>
+        </div>
+        <p class="manufacture__synopsis">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="manufacture__order-link btn-link" href="#">Сделать заказ</a>
+      </article>
     </main>
     <footer class="page-footer">
       <ul class="page-footer__social social">
-        <li class="social__item"><a class="social__link social__link--ig" href="#"><span class="visually-hidden">Наша страница в Instagram</span></a></li>
-        <li class="social__item"><a class="social__link social__link--fb" href="#"><span class="visually-hidden">Наша группа в Facebook</span></a></li>
-        <li class="social__item"><a class="social__link social__link--tw" href="#"><span class="visually-hidden">Наша страница в Twitter</span></a></li>
+        <li class="social__item">
+          <a class="social__link social__link--ig" href="#"><span class="visually-hidden">Наша страница в Instagram</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="#"><span class="visually-hidden">Наша группа в Facebook</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--tw" href="#"><span class="visually-hidden">Наша страница в Twitter</span></a>
+        </li>
       </ul>
       <p class="page-footer__copyright copyright">Разработано
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
@@ -75,27 +98,29 @@
       </p>
     </footer>
     <section class="modal modal-add">
-      <h2 class="modal-add__title">Добавить в корзину</h2>
-      <form class="modal-add__form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="modal-add__fieldset">
-          <legend class="modal-add__legend">Выберите размер:</legend>
-          <ul class="modal-add__list">
-            <li class="modal-add__item">
-              <label class="visually-hidden" for="size-s">Маленький (S)</label>
-              <input class="modal-add__input" id="size-s" type="radio" name="size" value="S" checked>
-            </li>
-            <li class="modal-add__item">
-              <label class="visually-hidden" for="size-m">Средний (M)</label>
-              <input class="modal-add__input" id="size-m" type="radio" name="size" value="M">
-            </li>
-            <li class="modal-add__item">
-              <label class="visually-hidden" for="size-l">Большой (L)</label>
-              <input class="modal-add__input" id="size-l" type="radio" name="size" value="L">
-            </li>
-          </ul>
-        </fieldset>
-        <button class="modal-add__btn" type="submit">Добавить</button>
-      </form>
+      <div class="modal__wrapper">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <form class="modal__content modal-add__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="modal-add__fieldset">
+            <legend class="modal-add__legend">Выберите размер:</legend>
+            <ul class="modal-add__list">
+              <li class="modal-add__item">
+                <label class="visually-hidden" for="size-s">Маленький (S)</label>
+                <input class="modal-add__input" id="size-s" type="radio" name="size" value="S" checked>
+              </li>
+              <li class="modal-add__item">
+                <label class="visually-hidden" for="size-m">Средний (M)</label>
+                <input class="modal-add__input" id="size-m" type="radio" name="size" value="M">
+              </li>
+              <li class="modal-add__item">
+                <label class="visually-hidden" for="size-l">Большой (L)</label>
+                <input class="modal-add__input" id="size-l" type="radio" name="size" value="L">
+              </li>
+            </ul>
+          </fieldset>
+          <button class="modal-add__btn" type="submit">Добавить</button>
+        </form>
+      </div>
     </section>
   </body>
 </html>
