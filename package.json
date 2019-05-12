@@ -10,8 +10,9 @@
     "gulp": "^4.0.1",
     "gulp-less": "4.0.x",
     "gulp-plumber": "1.2.x",
-    "gulp-postcss": "8.0.x",
+    "gulp-postcss": "^8.0.0",
     "gulp-sourcemaps": "2.6.x",
+    "postcss-sorting": "^5.0.0",
     "stylelint": "9.10.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
@@ -39,6 +40,7 @@
     "node": "8.15"
   },
   "dependencies": {
-    "normalize.less": "^1.0.0"
+    "normalize.less": "^1.0.0",
+    "npm": "^6.9.0"
   }
 }
