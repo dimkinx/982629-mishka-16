@@ -13,7 +13,7 @@
     "gulp-postcss": "^8.0.0",
     "gulp-sourcemaps": "2.6.x",
     "postcss-sorting": "^5.0.0",
-    "stylelint": "9.10.x",
+    "stylelint": "^10.0.1",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
