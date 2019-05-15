@@ -21,16 +21,14 @@
 }
 
 body {
-  min-width: 320px;
-  margin: 0;
-  padding: 0;
+  min-width: @mobile;
+  .no-indents();
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  color: #000000;
-  letter-spacing: normal;
-  background-color: #ffffff;
+  font-family: @font-family;
+  color: @black;
+  background-color: @white;
 }
 
 a {

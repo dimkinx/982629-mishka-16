@@ -7,33 +7,30 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина «Мишка»">
+      <a class="page-header__logo logo" href="index.html">
+        <img class="logo__img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина «Мишка»">
       </a>
       <nav class="page-header__nav navigation">
         <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
-        <ul class="navigation__site-menu site-menu">
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="catalog.html">Каталог товаров</a>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="site-menu__item">
-            <a class="site-menu__link site-menu__link--current">Вязание на заказ</a>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--current">Вязание на заказ</a>
           </li>
         </ul>
-        <ul class="navigation__user-menu user-menu">
-          <li class="user-menu__item">
-            <form class="user-menu__search search-form" action="https://echo.htmlacademy.ru" method="get">
-              <label class="visually-hidden" for="search">Поиск</label>
-              <input class="search-form__input" id="search" type="search" name="search-message" placeholder="Поиск по сайту">
-              <button class="search-form__btn" type="submit"><span class="visually-hidden">Найти</span></button>
-            </form>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--search" href="#">Поиск по сайту</a>
           </li>
-          <li class="user-menu__item">
-            <a class="user-menu__basket-link" href="#">Корзина: пока пуста</a>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--basket" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
     </header>
+    <!-- TODO: module3-task2
     <main class="page-main">
       <h1 class="page-main__title">Вязание на заказ</h1>
       <p class="page-main__lead">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
@@ -116,6 +113,7 @@
         <button class="order-form__btn btn-link" type="submit">Отправить заказ</button>
       </form>
     </main>
+    -->
     <footer class="page-footer">
       <ul class="page-footer__social social">
         <li class="social__item">
