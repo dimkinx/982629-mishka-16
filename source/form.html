@@ -3,36 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка — форма заказа</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-img" src="https://placehold.it/200x100" width="200" height="100" alt="Логотип интернет-магазина «Мишка»">
+      <a class="page-header__logo logo" href="index.html">
+        <img class="logo__img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина «Мишка»">
       </a>
       <nav class="page-header__nav navigation">
-        <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="navigation__site-menu site-menu">
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="catalog.html">Каталог товаров</a>
+        <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="site-menu__item">
-            <a class="site-menu__link site-menu__link--current">Вязание на заказ</a>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--current">Вязание на заказ</a>
           </li>
         </ul>
-        <ul class="navigation__user-menu user-menu">
-          <li class="user-menu__item">
-            <form class="user-menu__search search-form" action="https://echo.htmlacademy.ru" method="get">
-              <label class="visually-hidden" for="search">Поиск по сайту</label>
-              <input class="search-form__input" id="search" type="search" name="search-message" placeholder="Поиск по сайту">
-              <button class="search-form__btn" type="submit"><span class="visually-hidden">Найти</span></button>
-            </form>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--search" href="#">Поиск по сайту</a>
           </li>
-          <li class="user-menu__item">
-            <a class="user-menu__basket-link" href="#">Корзина: пока пуста</a>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--basket" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
     </header>
+    <!-- TODO: module3-task2
     <main class="page-main">
       <h1 class="page-main__title">Вязание на заказ</h1>
       <p class="page-main__lead">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
@@ -109,12 +107,13 @@
         <fieldset class="order-form__fieldset">
           <legend class="order-form__legend">Доп</legend>
           <textarea class="order-form__input-textarea" id="order-textarea" name="order-text" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-          <label class="order-form__label" for="order-textarea"><span class="visually-hidden">Написать пояснения к заказу в свободной форме</span></label>
+          <label class="order-form__label" for="order-textarea"><span class="visually-hidden">Пояснения к заказу в свободной форме</span></label>
         </fieldset>
         <small class="order-form__required-fields">*Поля обязательны для заполнения</small>
         <button class="order-form__btn btn-link" type="submit">Отправить заказ</button>
       </form>
     </main>
+    -->
     <footer class="page-footer">
       <ul class="page-footer__social social">
         <li class="social__item">
@@ -129,7 +128,7 @@
       </ul>
       <p class="page-footer__copyright copyright">Разработано
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__logo-img" src="https://placehold.it/100x100" width="100" height="100" alt="Логотип HTML Academy">
+          <img class="copyright__logo-img" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
         </a>
       </p>
     </footer>

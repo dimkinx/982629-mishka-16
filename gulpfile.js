@@ -1,12 +1,14 @@
 "use strict";
 
-var gulp = require("gulp");
-var plumber = require("gulp-plumber");
-var sourcemap = require("gulp-sourcemaps");
-var less = require("gulp-less");
-var postcss = require("gulp-postcss");
-var autoprefixer = require("autoprefixer");
-var server = require("browser-sync").create();
+const gulp = require("gulp");
+const plumber = require("gulp-plumber");
+const sourcemap = require("gulp-sourcemaps");
+const less = require("gulp-less");
+const postcss = require("gulp-postcss");
+const autoprefixer = require("autoprefixer");
+const server = require("browser-sync").create();
+const sorting = require("postcss-sorting");
+const sortingOptions = require("./.postcss-sorting.json");
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -14,7 +16,8 @@ gulp.task("css", function () {
     .pipe(sourcemap.init())
     .pipe(less())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
+      sorting(sortingOptions)
     ]))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))

@@ -3,32 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка — каталог</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-img" src="https://placehold.it/200x100" width="200" height="100" alt="Логотип интернет-магазина «Мишка»">
+      <a class="page-header__logo logo" href="index.html">
+        <img class="logo__img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина «Мишка»">
       </a>
       <nav class="page-header__nav navigation">
-        <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="navigation__site-menu site-menu">
-          <li class="site-menu__item">
-            <a class="site-menu__link site-menu__link--current">Каталог товаров</a>
+        <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--current">Каталог товаров</a>
           </li>
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="form.html">Вязание на заказ</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
-        <ul class="navigation__user-menu user-menu">
-          <li class="user-menu__item">
-            <form class="user-menu__search search-form" action="https://echo.htmlacademy.ru" method="get">
-              <label class="visually-hidden" for="search">Поиск по сайту</label>
-              <input class="search-form__input" id="search" type="search" name="search-message" placeholder="Поиск по сайту">
-              <button class="search-form__btn" type="submit"><span class="visually-hidden">Найти</span></button>
-            </form>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--search" href="#">Поиск по сайту</a>
           </li>
-          <li class="user-menu__item">
-            <a class="user-menu__basket-link" href="#">Корзина: пока пуста</a>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--basket" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
@@ -39,45 +36,54 @@
         <h2 class="visually-hidden">Список товаров</h2>
         <ul class="products__list">
           <li class="products__item product-card">
-            <a class="product-card__link" href="#">
-              <img class="product-card__img" src="https://placehold.it/200x300" width="200" height="300" alt="Вязаный зайчик">
+            <a class="product-card__img-link" href="#">
+              <img class="product-card__img" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Вязаный зайчик">
             </a>
-            <a class="product-card__link" href="#">
-              <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
-            </a>
-            <p class="product-card__desc">Рост 30 см, вес 200 г</p>
-            <p class="product-card__price">1 200 руб. <a class="product-card__add" href="#"><span class="visually-hidden">Добавить в корзину</span></a></p>
+            <div class="product-card__inner">
+              <a class="product-card__link" href="#">
+                <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
+              </a>
+              <p class="product-card__desc">Рост 30 см, вес 200 г</p>
+              <p class="product-card__price">1 200 руб. <a class="product-card__add" href="#"><span class="visually-hidden">Добавить в корзину</span></a></p>
+            </div>
           </li>
           <li class="products__item product-card">
-            <a class="product-card__link" href="#">
-              <img class="product-card__img" src="https://placehold.it/200x300" width="200" height="300" alt="Вязаная корзина">
+            <a class="product-card__img-link" href="#">
+              <img class="product-card__img" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Вязаная корзина">
             </a>
-            <a class="product-card__link" href="#">
-              <h3 class="product-card__title">Корзинка для белья</h3>
-            </a>
-            <p class="product-card__desc">Диаметр 15 см, высота 10 см</p>
-            <p class="product-card__price">690 руб. <a class="product-card__add" href="#"><span class="visually-hidden">Добавить в корзину</span></a></p>
+            <div class="product-card__inner">
+              <a class="product-card__link" href="#">
+                <h3 class="product-card__title">Корзинка для белья</h3>
+              </a>
+              <p class="product-card__desc">Диаметр 15 см, высота 10 см</p>
+              <p class="product-card__price">690 руб. <a class="product-card__add" href="#"><span class="visually-hidden">Добавить в корзину</span></a></p>
+            </div>
           </li>
           <li class="products__item product-card">
-            <a class="product-card__link" href="#">
-              <img class="product-card__img" src="https://placehold.it/200x300" width="200" height="300" alt="Большая вязаная корзина">
+            <a class="product-card__img-link" href="#">
+              <img class="product-card__img" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Большая вязаная корзина">
             </a>
-            <a class="product-card__link" href="#">
-              <h3 class="product-card__title">Большая корзинка для игрушек</h3>
-            </a>
-            <p class="product-card__desc">Диаметр 30 см, высота 30 см</p>
-            <p class="product-card__price">1 500 руб. <a class="product-card__add" href="#"><span class="visually-hidden">Добавить в корзину</span></a></p>
+            <div class="product-card__inner">
+              <a class="product-card__link" href="#">
+                <h3 class="product-card__title">Большая корзинка для игрушек</h3>
+              </a>
+              <p class="product-card__desc">Диаметр 30 см, высота 30 см</p>
+              <p class="product-card__price">1 500 руб. <a class="product-card__add" href="#"><span class="visually-hidden">Добавить в корзину</span></a></p>
+            </div>
           </li>
         </ul>
       </section>
+      <!-- TODO: module3-task2
       <article class="page-main__manufacture manufacture">
         <h2 class="manufacture__title">Процесс производства</h2>
         <div class="manufacture__video-container video-container">
+          <img class="video-container__preview-img" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Превью процесса производства">
           <button class="video-container__btn"><span class="visually-hidden">Смотреть</span></button>
         </div>
         <p class="manufacture__synopsis">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <a class="manufacture__order-link btn-link" href="#">Сделать заказ</a>
       </article>
+      -->
     </main>
     <footer class="page-footer">
       <ul class="page-footer__social social">
@@ -93,10 +99,11 @@
       </ul>
       <p class="page-footer__copyright copyright">Разработано
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__logo-img" src="https://placehold.it/100x100" width="100" height="100" alt="Логотип HTML Academy">
+          <img class="copyright__logo-img" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
         </a>
       </p>
     </footer>
+    <!-- TODO: module3-task2
     <section class="modal modal-add">
       <div class="modal__wrapper">
         <h2 class="modal__title">Добавить в корзину</h2>
@@ -105,16 +112,16 @@
             <legend class="modal-add__legend">Выберите размер:</legend>
             <ul class="modal-add__list">
               <li class="modal-add__item">
-                <label class="visually-hidden" for="size-s">Маленький (S)</label>
-                <input class="modal-add__input" id="size-s" type="radio" name="size" value="S" checked>
+                <label class="modal-add__label" for="size-s">S</label>
+                <input class="visually-hidden" id="size-s" type="radio" name="size" value="S" checked>
               </li>
               <li class="modal-add__item">
-                <label class="visually-hidden" for="size-m">Средний (M)</label>
-                <input class="modal-add__input" id="size-m" type="radio" name="size" value="M">
+                <label class="modal-add__label" for="size-m">M</label>
+                <input class="visually-hidden" id="size-m" type="radio" name="size" value="M">
               </li>
               <li class="modal-add__item">
-                <label class="visually-hidden" for="size-l">Большой (L)</label>
-                <input class="modal-add__input" id="size-l" type="radio" name="size" value="L">
+                <label class="modal-add__label" for="size-l">L</label>
+                <input class="visually-hidden" id="size-l" type="radio" name="size" value="L">
               </li>
             </ul>
           </fieldset>
@@ -122,5 +129,6 @@
         </form>
       </div>
     </section>
+    -->
   </body>
 </html>
