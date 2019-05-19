@@ -21,8 +21,39 @@
 }
 
 .slider__btn {
+  position: relative;
   width: 100%;
   border: none;
   background-color: @white;
   cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    left: calc(50% - 25px);
+    width: 50px;
+    height: 4px;
+    background-color: @black;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    width: 15px;
+    height: 15px;
+    border-top: 4px solid @black;
+    border-right: 4px solid @black;
+  }
+
+  &--prev::before {
+    right: calc(50% + 5px);
+    transform: rotate(225deg);
+  }
+
+  &--next::before {
+    left: calc(50% + 5px);
+    transform: rotate(45deg);
+  }
 }
