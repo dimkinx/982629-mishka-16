@@ -14,7 +14,9 @@
 }
 
 .about-us__item {
-  margin-bottom: 30px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
   padding-top: 53px;
   font-weight: 700;
   font-size: 17px;

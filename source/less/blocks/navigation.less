@@ -1,14 +1,33 @@
 .navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
   font-weight: 700;
-  color: @black;
   background-color: transparent;
 }
 
+.navigation__logo {
+  margin: 22px auto;
+}
+
 .navigation__toggle {
+  display: none;
   position: absolute;
   top: 30px;
-  right: 30px;
+  left: calc(50% + 109px);
+  margin: 0;
+  padding: 0;
+  width: 21px;
+  height: 20px;
+  font-size: 0;
+  background-color: @black;
+  border: 0;
+  cursor: pointer;
+
+  &--show {
+    display: block;
+  }
 }
 
 .navigation__list {
@@ -17,13 +36,16 @@
 }
 
 .navigation__item {
-  padding: 0 30px;
   min-height: 78px;
+  display: flex;
+  padding-left: calc(50% - 130px);
+  align-items: center;
   border-top: 1px solid @line-grey;
 }
 
 .navigation__link {
-  display: block;
   padding-left: 46px;
+  font-size: 17px;
+  line-height: 24px;
   color: @black;
 }

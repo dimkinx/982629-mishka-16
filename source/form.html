@@ -7,10 +7,10 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo logo" href="index.html">
-        <img class="logo__img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина «Мишка»">
-      </a>
       <nav class="page-header__nav navigation">
+        <a class="navigation__logo logo" href="index.html">
+          <img class="logo__img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина «Мишка»">
+        </a>
         <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
         <ul class="navigation__list">
           <li class="navigation__item">
@@ -30,12 +30,11 @@
         </ul>
       </nav>
     </header>
-    <!-- TODO: module3-task2
     <main class="page-main">
       <h1 class="page-main__title">Вязание на заказ</h1>
-      <p class="page-main__lead">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <p class="page-main__lead">Мы будем рады воплотить в жизнь ваши&nbsp;пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="page-main__order-form order-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="order-form__fieldset">
+        <fieldset class="order-form__fieldset order-form__fieldset--type">
           <legend class="order-form__legend">Тип</legend>
           <ul class="order-form__list">
             <li class="order-form__item">
@@ -48,7 +47,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="order-form__fieldset">
+        <fieldset class="order-form__fieldset order-form__fieldset--color">
           <legend class="order-form__legend">Цвет</legend>
           <ul class="order-form__list">
             <li class="order-form__item">
@@ -77,7 +76,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="order-form__fieldset">
+        <fieldset class="order-form__fieldset order-form__fieldset--full-name">
           <legend class="order-form__legend">ФИО</legend>
           <ul class="order-form__list">
             <li class="order-form__item">
@@ -94,26 +93,25 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="order-form__fieldset">
+        <fieldset class="order-form__fieldset order-form__fieldset--phone-number">
           <legend class="order-form__legend">Тел</legend>
+          <label class="visually-hidden" for="phone-number">Номер телефона</label>
           <input class="order-form__input-text" id="phone-number" type="tel" name="phone-number" pattern="\+7\s[0-9]{3}\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-          <label class="order-form__label" for="phone-number"><span class="visually-hidden">Номер телефона</span></label>
         </fieldset>
-        <fieldset class="order-form__fieldset">
+        <fieldset class="order-form__fieldset order-form__fieldset--e-mail">
           <legend class="order-form__legend">E-mail</legend>
+          <label class="visually-hidden" for="e-mail">Адрес электропочты</label>
           <input class="order-form__input-text" id="e-mail" type="email" name="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ваш Email*" required>
-          <label class="order-form__label" for="e-mail"><span class="visually-hidden">Адрес электропочты</span></label>
         </fieldset>
-        <fieldset class="order-form__fieldset">
+        <fieldset class="order-form__fieldset order-form__fieldset--order-textarea">
           <legend class="order-form__legend">Доп</legend>
-          <textarea class="order-form__input-textarea" id="order-textarea" name="order-text" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-          <label class="order-form__label" for="order-textarea"><span class="visually-hidden">Пояснения к заказу в свободной форме</span></label>
+          <label class="visually-hidden" for="order-textarea">Пояснения к заказу в свободной форме</label>
+          <textarea class="order-form__input-textarea" id="order-textarea" name="order-text" rows="5" placeholder="Опишите все ваши пожелания&nbsp;к&nbsp;заказу"></textarea>
         </fieldset>
         <small class="order-form__required-fields">*Поля обязательны для заполнения</small>
         <button class="order-form__btn btn-link" type="submit">Отправить заказ</button>
       </form>
     </main>
-    -->
     <footer class="page-footer">
       <ul class="page-footer__social social">
         <li class="social__item">
