@@ -3,10 +3,22 @@
 }
 
 .popular-product__title {
+  position: relative;
   margin: 0 0 30px;
   padding: 0 0 24px;
   font-weight: 700;
   font-size: 25px;
+
+  &::after {
+    content: "Товар недели";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 17px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: @light-green;
+  }
 }
 
 .popular-product__lead {
@@ -20,6 +32,10 @@
   background-color: @grey;
 }
 
+.popular-product__benefits {
+  width: 100%;
+}
+
 .popular-product__price {
   .no-indents();
   font-weight: 700;
@@ -31,4 +47,106 @@
 
 .popular-product__order-link {
   margin: 24px auto 10px;
+}
+
+@media (min-width: @tablet-width) {
+  .popular-product {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .popular-product__title {
+    margin-bottom: 50px;
+    padding: 0 125px 0 0;
+    font-size: 43px;
+    line-height: 50px;
+
+    &::after {
+      top: 10px;
+      right: 0;
+      bottom: unset;
+      left: unset;
+      width: 125px;
+      line-height: 17px;
+      text-align: center;
+    }
+  }
+
+  .popular-product__lead {
+    margin: 0 0 40px;
+    width: 290px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .popular-product__picture {
+    order: 1;
+    align-self: flex-end;
+    margin: -435px 0 0;
+  }
+
+  .popular-product__img {
+    margin: 0;
+  }
+
+  .popular-product__benefits {
+    margin-bottom: 60px;
+
+    width: 290px;
+  }
+
+  .popular-product__price {
+    width: 290px;
+    font-size: 20px;
+  }
+
+  .popular-product__order-link {
+    margin: 30px 0;
+    padding-right: 45px;
+    width: 290px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .popular-product__title {
+    margin: 100px 0 50px;
+    padding: 0 0 0 175px;
+    font-size: 53px;
+    line-height: 57px;
+
+    &::after {
+      top: 10px;
+      right: unset;
+      bottom: unset;
+      left: 0;
+      padding: 0 40px;
+      width: 95px;
+      line-height: 17px;
+    }
+  }
+
+  .popular-product__lead {
+    margin-bottom: 60px;
+    padding: 0 0 0 175px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .popular-product__picture {
+    order: 1;
+    align-self: flex-end;
+    margin-top: -630px;
+  }
+
+  .popular-product__benefits {
+    margin: 0 0 100px 175px;
+  }
+
+  .popular-product__price {
+    margin: 0 0 30px 175px;
+  }
+
+  .popular-product__order-link {
+    margin: 0 0 0 175px;
+  }
 }
