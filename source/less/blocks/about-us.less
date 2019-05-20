@@ -23,3 +23,58 @@
   line-height: 20px;
   color: @dark-grey;
 }
+
+@media (min-width: @tablet-width) {
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-us__item {
+    padding-top: 53px;
+    width: 50%;
+    font-size: 20px;
+    line-height: 22px;
+
+    &--eco {
+      order: 1;
+    }
+
+    &--price {
+      order: 3;
+    }
+
+    &--likes {
+      order: 5;
+    }
+
+    &--handmade {
+      order: 2;
+    }
+
+    &--support {
+      order: 4;
+    }
+
+    &--gift {
+      order: 6;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-us__title {
+    margin-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about-us__list {
+    padding: 0 175px;
+  }
+}
