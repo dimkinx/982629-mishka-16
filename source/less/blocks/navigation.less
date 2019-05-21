@@ -12,7 +12,7 @@
 }
 
 .navigation__toggle {
-  display: none;
+  display: block;
   position: absolute;
   top: 30px;
   left: calc(50% + 109px);
@@ -25,8 +25,8 @@
   border: 0;
   cursor: pointer;
 
-  &--show {
-    display: block;
+  &--hide {
+    display: none;
   }
 }
 
@@ -74,6 +74,10 @@
 
   .navigation__logo {
     margin: 22px 0;
+  }
+
+  .navigation__toggle {
+    display: none;
   }
 
   .navigation__item {
