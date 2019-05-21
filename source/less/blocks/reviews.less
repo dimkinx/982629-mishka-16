@@ -30,7 +30,7 @@
 .reviews__author-link {
   font-weight: 400;
   line-height: 30px;
-  color: @black;
+  color: @dark-grey;
 
   &[href]:hover,
   &[href]:focus {
@@ -40,5 +40,132 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.reviews__control-list {
+  .no-indents();
+  display: flex;
+  margin: 35px 0 40px;
+  list-style: none;
+  border: 1px solid @line-grey;
+}
+
+.reviews__control-item {
+  display: flex;
+  width: 50%;
+  min-height: 50px;
+
+  &:not(:last-child) {
+    border-right: 1px solid @line-grey;
+  }
+}
+
+.reviews__btn {
+  .no-indents();
+  position: relative;
+  width: 100%;
+  border: none;
+  background-color: @white;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    left: calc(50% - 25px);
+    width: 50px;
+    height: 4px;
+    background-color: @black;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    width: 15px;
+    height: 15px;
+    border-top: 4px solid @black;
+    border-right: 4px solid @black;
+  }
+
+  &--prev::before {
+    right: calc(50% + 5px);
+    transform: rotate(225deg);
+  }
+
+  &--next::before {
+    left: calc(50% + 5px);
+    transform: rotate(45deg);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-top: 80px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 350px auto;
+  }
+
+  .reviews__title {
+    order: -2;
+    margin-bottom: 60px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .reviews__text {
+    margin-bottom: 30px;
+    font-size: 17px;
+  }
+
+  .reviews__author {
+    font-size: 18px;
+  }
+
+  .reviews__author-link {
+    font-size: 17px;
+  }
+
+  .reviews__write-link {
+    order: -1;
+    margin-left: auto;
+    width: 172px;
+    height: 50px;
+  }
+
+  .reviews__control-list {
+    margin: 0 0 0 auto;
+    width: 172px;
+    border: none;
+  }
+
+  .reviews__control-item {
+    border: none;
+
+    &:not(:last-child) {
+      border: none;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__title {
+    margin-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .reviews__text {
+    margin-left: 175px;
+  }
+
+  .reviews__author {
+    margin-left: 175px;
   }
 }
