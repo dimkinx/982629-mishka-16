@@ -63,49 +63,52 @@
       </section>
       <section class="page-main__popular-product popular-product">
         <h2 class="visually-hidden">Товар недели</h2>
-        <h3 class="popular-product__title">Вязаные корзинки</h3>
-        <p class="popular-product__lead">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <table class="popular-product__benefits benefits">
-          <tr class="benefits__row">
-            <th class="benefits__attribute">Цвет:</th>
-            <td class="benefits__value">«Тиффани»/серый</td>
-          </tr>
-          <tr class="benefits__row">
-            <th class="benefits__attribute">Диаметр:</th>
-            <td class="benefits__value">25 см</td>
-          </tr>
-          <tr class="benefits__row">
-            <th class="benefits__attribute">Высота:</th>
-            <td class="benefits__value">15 см</td>
-          </tr>
-        </table>
-        <picture class="popular-product__picture">
-          <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
-          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x">
-          <img class="popular-product__img" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
-        </picture>
-        <p class="popular-product__price">Цена: 990 руб.</p>
-        <a class="popular-product__order-link btn-link" href="#">Заказать</a>
+        <h3 class="popular-product__title" data-content="Товар недели">Вязаные корзинки</h3>
+        <div class="popular-product__wrapper">
+          <p class="popular-product__lead">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <table class="popular-product__benefits benefits">
+            <tr class="benefits__row">
+              <th class="benefits__attribute">Цвет:</th>
+              <td class="benefits__value">«Тиффани»/серый</td>
+            </tr>
+            <tr class="benefits__row">
+              <th class="benefits__attribute">Диаметр:</th>
+              <td class="benefits__value">25 см</td>
+            </tr>
+            <tr class="benefits__row">
+              <th class="benefits__attribute">Высота:</th>
+              <td class="benefits__value">15 см</td>
+            </tr>
+          </table>
+          <div class="popular-product__picture">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x">
+              <img class="popular-product__img" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
+            </picture>
+          </div>
+          <p class="popular-product__price">Цена: 990 руб.</p>
+          <a class="popular-product__order-link btn-link" href="#">Заказать</a>
+        </div>
       </section>
       <section class="page-main__about-us about-us">
         <h2 class="about-us__title">Коротко о нас:</h2>
         <ul class="about-us__list">
           <li class="about-us__item about-us__item--eco">Экологически чистые&nbsp;материалы</li>
-          <li class="about-us__item about-us__item--price">Скандинавский стиль по&nbsp;российской цене</li>
-          <li class="about-us__item about-us__item--likes">Увеличивает лайки на&nbsp;фотографиях</li>
-          <li class="about-us__item about-us__item--handmade">Связано вручную с любовью&nbsp;и&nbsp;умилением</li>
-          <li class="about-us__item about-us__item--support">Поддержка отечественного производителя</li>
-          <li class="about-us__item about-us__item--gift">Поставляется в подарочной&nbsp;упаковке</li>
+          <li class="about-us__item about-us__item--price">Скандинавский&nbsp;стиль по&nbsp;российской&nbsp;цене</li>
+          <li class="about-us__item about-us__item--likes">Увеличивает&nbsp;лайки на&nbsp;фотографиях</li>
+          <li class="about-us__item about-us__item--handmade">Связано&nbsp;вручную&nbsp;с любовью&nbsp;и&nbsp;умилением</li>
+          <li class="about-us__item about-us__item--support">Поддержка&nbsp;отечественного производителя</li>
+          <li class="about-us__item about-us__item--gift">Поставляется&nbsp;в подарочной&nbsp;упаковке</li>
         </ul>
       </section>
       <section class="page-main__reviews reviews">
         <h2 class="reviews__title">Отзывы</h2>
         <blockquote class="reviews__item">
           <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <cite class="reviews__author">Анастасия Красильникова</cite>
         </blockquote>
-        <cite class="reviews__author">Анастасия Красильникова<br>
-          <a class="reviews__author-link" href="#">@misssssiskras</a>
-        </cite>
+        <a class="reviews__author-link" href="#">@misssssiskras</a>
         <ul class="reviews__control-list">
           <li class="reviews__control-item">
             <button class="reviews__btn reviews__btn--prev" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
@@ -124,8 +127,6 @@
             <dd class="contacts__value contacts__value--e-mail">
               <a class="contacts__value-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
             </dd>
-          </dl>
-          <dl class="contacts__list">
             <dt class="contacts__attribute">адрес:</dt>
             <dd class="contacts__value contacts__value--address">г. Санкт-Петербург, <br>ул. Большая Конюшенная, <br>д. 19/8, офис 101</dd>
           </dl>

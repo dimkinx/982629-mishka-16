@@ -14,6 +14,8 @@
 }
 
 .about-us__item {
+  position: relative;
+
   &:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -21,7 +23,46 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-  color: @dark-grey;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-color: @black;
+  }
+
+  &--eco::before {
+    top: 0;
+    left: 0;
+  }
+
+  &--price::before {
+    top: 0;
+    left: 0;
+  }
+
+  &--likes::before {
+    top: 0;
+    left: 0;
+  }
+
+  &--handmade::before {
+    top: 0;
+    left: 0;
+  }
+
+  &--support::before {
+    top: 0;
+    left: 0;
+  }
+
+  &--gift::before {
+    top: 0;
+    left: 0;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -31,8 +72,7 @@
   }
 
   .about-us__list {
-    display: flex;
-    flex-wrap: wrap;
+    column-count: 2;
   }
 
   .about-us__item {
@@ -40,30 +80,7 @@
     width: 50%;
     font-size: 20px;
     line-height: 22px;
-
-    &--eco {
-      order: 1;
-    }
-
-    &--price {
-      order: 3;
-    }
-
-    &--likes {
-      order: 5;
-    }
-
-    &--handmade {
-      order: 2;
-    }
-
-    &--support {
-      order: 4;
-    }
-
-    &--gift {
-      order: 6;
-    }
+    break-inside: avoid;
   }
 }
 
