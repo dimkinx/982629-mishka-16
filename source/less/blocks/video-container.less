@@ -19,4 +19,33 @@
   height: 77px;
   border: none;
   line-height: 0;
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    width: 120px;
+    height: 92px;
+    background-size: 120px auto;
+    outline: none;
+  }
+
+  &:active {
+    width: 80px;
+    height: 62px;
+    background-size: 120px auto;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 682px;
+    height: auto;
+  }
 }

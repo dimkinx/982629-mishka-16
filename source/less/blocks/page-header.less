@@ -1,5 +1,11 @@
 .page-header {
-  background-color: @white;
   border-top: 1px solid @line-grey;
-  border-bottom: 1px solid @line-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    margin-bottom: -60px;
+    min-height: 88px;
+    border-top: none;
+  }
 }

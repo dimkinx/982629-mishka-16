@@ -11,3 +11,24 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .logo__img {
+    width: 112px;
+    height: 46px;
+  }
+
+  .logo--footer {
+    & .logo__img {
+      width: 102px;
+      height: 34px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo__img {
+    width: 148px;
+    height: 73px;
+  }
+}

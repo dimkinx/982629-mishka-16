@@ -12,3 +12,20 @@
     margin-bottom: 30px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .products__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .products__item {
+    &:not(:last-child) {
+      .no-indents();
+    }
+
+    &:not(:nth-child(3n)) {
+      margin-right: 50px;
+    }
+  }
+}
