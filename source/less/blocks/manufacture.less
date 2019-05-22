@@ -7,11 +7,22 @@
 }
 
 .manufacture__title {
+  position: relative;
   margin: 26px 33px;;
   padding-left: 57px;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-color: @black;
+  }
 }
 
 .manufacture__video-container {
@@ -51,9 +62,18 @@
 
   .manufacture__title {
     margin-bottom: 0;
-    padding-left: 65px;
+    padding: 10px 0 10px 65px;
     order: 1;
     font-size: 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 0;
+      width: 40px;
+      height: 40px;
+    }
   }
 
   .manufacture__video-container {
