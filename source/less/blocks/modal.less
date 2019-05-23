@@ -1,3 +1,157 @@
 .modal {
+  display: none;
+
+  &--show {
+    display: block;
+  }
+}
+
+.modal__overlay {
+  position: fixed;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   background-color: @white;
+  opacity: 0.9;
+  z-index: 99;
+}
+
+.modal__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  min-height: 337px;
+  box-sizing: border-box;
+  background-color: @white;
+  border-top: 1px solid @darkest-line-grey;
+  border-bottom: 1px solid @darkest-line-grey;
+  box-shadow: 0 5px 10px 0 @shadow-color;
+  z-index: 100;
+}
+
+.modal__title {
+  margin: 35px 0 0;
+  width: 260px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.modal__lead {
+  color: @dark-grey;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 260px;
+}
+
+.modal__list {
+  .no-indents();
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.modal__item {
+  &:not(:last-child) {
+    margin-right: 7px;
+  }
+}
+
+.modal__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 78px;
+  min-height: 48px;
+  border: 2px solid @dark-grey-10;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: @dark-grey;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: @dark-grey-30;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.modal__input {
+  .visually-hidden();
+}
+
+.modal__input:checked + .modal__label {
+  border-color: @light-green;
+}
+
+.modal__btn {
+  margin: 30px 0;
+  padding: 18px;
+  width: 256px;
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  background-color: @light-green;
+  border: 2px solid @light-green;
+  color: @white;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: @white;
+    color: @light-green;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .modal__wrapper {
+    width: 566px;
+  }
+
+  .modal__title {
+    width: 100%;
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .modal__lead {
+    font-size: 17px;
+  }
+
+  .modal__form {
+    width: 350px;
+  }
+
+  .modal__label {
+    width: 108px;
+  }
+
+  .modal__btn {
+    margin: 30px 0;
+    padding: 18px;
+    width: 350px;
+  }
 }

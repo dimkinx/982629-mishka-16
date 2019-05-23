@@ -4,9 +4,16 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка — форма заказа</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/opensans.woff" as="font">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   </head>
   <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <nav class="page-header__nav navigation navigation--closed navigation--nojs">
         <a class="navigation__logo logo" href="index.html">
@@ -86,7 +93,7 @@
                 <label class="order-form__label" for="color-5">Розовый</label>
               </li>
               <li class="order-form__item">
-                <input class="order-form__input" id="color-6" type="checkbox" name="product-color" value="оранжевый">
+                <input class="order-form__input" id="color-6" type="checkbox" name="product-color" value="оранжевый" checked disabled>
                 <label class="order-form__label" for="color-6">Оранжевый</label>
               </li>
             </ul>
@@ -153,6 +160,7 @@
         </a>
       </div>
     </footer>
-    <script src="js/navigation.js"></script>
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/scripts.min.js"></script>
   </body>
 </html>
