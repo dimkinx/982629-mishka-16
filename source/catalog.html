@@ -62,7 +62,7 @@
                 <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
               </a>
               <p class="product-card__desc">Рост 30 см, вес 200 г</p>
-              <p class="product-card__price">1 200 руб. <a class="product-card__add" href="#"><span class="visually-hidden">Добавить в корзину</span></a></p>
+              <p class="product-card__price">1 200 руб. <a class="product-card__add order-link" href="#"><span class="visually-hidden">Добавить в корзину</span></a></p>
             </div>
           </li>
           <li class="products__item product-card">
@@ -78,7 +78,7 @@
                 <h3 class="product-card__title">Корзинка для белья</h3>
               </a>
               <p class="product-card__desc">Диаметр 15 см, высота 10 см</p>
-              <p class="product-card__price">690 руб. <a class="product-card__add" href="#"><span class="visually-hidden">Добавить в корзину</span></a></p>
+              <p class="product-card__price">690 руб. <a class="product-card__add order-link" href="#"><span class="visually-hidden">Добавить в корзину</span></a></p>
             </div>
           </li>
           <li class="products__item product-card">
@@ -94,7 +94,7 @@
                 <h3 class="product-card__title">Большая корзинка для игрушек</h3>
               </a>
               <p class="product-card__desc">Диаметр 30 см, высота 30 см</p>
-              <p class="product-card__price">1 500 руб. <a class="product-card__add" href="#"><span class="visually-hidden">Добавить в корзину</span></a></p>
+              <p class="product-card__price">1 500 руб. <a class="product-card__add order-link" href="#"><span class="visually-hidden">Добавить в корзину</span></a></p>
             </div>
           </li>
         </ul>
@@ -141,33 +141,30 @@
         </a>
       </div>
     </footer>
-    <!-- TODO: module3-task2
-    <section class="modal modal-add">
+    <section class="modal">
       <div class="modal__wrapper">
-        <h2 class="modal__title">Добавить в корзину</h2>
-        <form class="modal__content modal-add__form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="modal-add__fieldset">
-            <legend class="modal-add__legend">Выберите размер:</legend>
-            <ul class="modal-add__list">
-              <li class="modal-add__item">
-                <label class="modal-add__label" for="size-s">S</label>
-                <input class="visually-hidden" id="size-s" type="radio" name="size" value="S" checked>
-              </li>
-              <li class="modal-add__item">
-                <label class="modal-add__label" for="size-m">M</label>
-                <input class="visually-hidden" id="size-m" type="radio" name="size" value="M">
-              </li>
-              <li class="modal-add__item">
-                <label class="modal-add__label" for="size-l">L</label>
-                <input class="visually-hidden" id="size-l" type="radio" name="size" value="L">
-              </li>
-            </ul>
-          </fieldset>
-          <button class="modal-add__btn" type="submit">Добавить</button>
+        <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+        <p class="modal__lead">Выберите размер:</p>
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+          <ul class="modal__list">
+            <li class="modal__item">
+              <input class="modal__input" id="size-s" type="radio" name="size" value="S" checked>
+              <label class="modal__label" for="size-s">S</label>
+            </li>
+            <li class="modal__item">
+              <input class="modal__input" id="size-m" type="radio" name="size" value="M">
+              <label class="modal__label" for="size-m">M</label>
+            </li>
+            <li class="modal__item">
+              <input class="modal__input" id="size-l" type="radio" name="size" value="L">
+              <label class="modal__label" for="size-l">L</label>
+            </li>
+          </ul>
+          <button class="modal__btn" type="submit">Добавить</button>
         </form>
       </div>
+      <div class="modal__overlay"></div>
     </section>
-    -->
-    <script src="js/navigation.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
