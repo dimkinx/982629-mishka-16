@@ -33,7 +33,7 @@
   position: absolute;
   top: 4px;
   left: 3px;
-  fill: rgba(34, 31, 31, 0.2);
+  fill: @darkest-green-20;
 }
 
 .navigation__link {
@@ -122,6 +122,11 @@
     .navigation__toggle {
       display: none;
     }
+
+    & .navigation__list--site,
+    & .navigation__list--user {
+      display: block;
+    }
   }
 }
 
@@ -152,6 +157,11 @@
 
   .navigation__link {
     .no-indents();
+  }
+
+  .navigation__link-svg {
+    top: 4px;
+    left: 33px;
   }
 
   .navigation__list--site {
