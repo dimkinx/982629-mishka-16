@@ -15,54 +15,23 @@
 
 .about-us__item {
   position: relative;
-
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
   padding-top: 53px;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 40px;
-    height: 40px;
-    background-color: @black;
+  &:not(:last-child) {
+    margin-bottom: 30px;
   }
+}
 
-  &--eco::before {
-    top: 0;
-    left: 0;
-  }
-
-  &--price::before {
-    top: 0;
-    left: 0;
-  }
-
-  &--likes::before {
-    top: 0;
-    left: 0;
-  }
-
-  &--handmade::before {
-    top: 0;
-    left: 0;
-  }
-
-  &--support::before {
-    top: 0;
-    left: 0;
-  }
-
-  &--gift::before {
-    top: 0;
-    left: 0;
-  }
+.about-us__item-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  fill: @light-green;
 }
 
 @media (min-width: @tablet-width) {
@@ -77,10 +46,13 @@
 
   .about-us__item {
     padding-top: 53px;
-    width: 50%;
     font-size: 20px;
     line-height: 22px;
     break-inside: avoid;
+
+    &:last-child {
+      margin-bottom: 30px;
+    }
   }
 }
 
