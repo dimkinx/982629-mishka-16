@@ -1,23 +1,23 @@
 "use strict";
 
-var gulp = require("gulp");
-var plumber = require("gulp-plumber");
-var sourcemap = require("gulp-sourcemaps");
-var rename = require("gulp-rename");
-var svgstore = require("gulp-svgstore");
-var less = require("gulp-less");
-var postcss = require("gulp-postcss");
-var posthtml = require("gulp-posthtml");
-var autoprefixer = require("autoprefixer");
-var csso = require("gulp-csso");
-var imagemin = require("gulp-imagemin");
-var webp = require("gulp-webp");
-var include = require("posthtml-include");
-var minifyjs = require("gulp-js-minify");
-var del = require("del");
-var server = require("browser-sync").create();
-var sorting = require("postcss-sorting");
-var sortingOptions = require("./.postcss-sorting.json");
+const gulp = require("gulp");
+const plumber = require("gulp-plumber");
+const sourcemap = require("gulp-sourcemaps");
+const rename = require("gulp-rename");
+const svgstore = require("gulp-svgstore");
+const less = require("gulp-less");
+const postcss = require("gulp-postcss");
+const posthtml = require("gulp-posthtml");
+const autoprefixer = require("autoprefixer");
+const csso = require("gulp-csso");
+const imagemin = require("gulp-imagemin");
+const webp = require("gulp-webp");
+const include = require("posthtml-include");
+const minifyjs = require("gulp-js-minify");
+const del = require("del");
+const server = require("browser-sync").create();
+const sorting = require("postcss-sorting");
+const sortingOptions = require("./.postcss-sorting.json");
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
