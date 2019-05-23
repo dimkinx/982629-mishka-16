@@ -29,7 +29,7 @@ gulp.task("css", function () {
       sorting(sortingOptions)
     ]))
     .pipe(csso())
-    .pipe(rename({suffix: ".min"}))
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
