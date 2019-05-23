@@ -17,7 +17,7 @@ navToggle.addEventListener("click", function() {
 
 // Модальное окно
 
-const links = document.querySelectorAll(".order-link");
+const links = document.querySelectorAll(".popular-product__order-link, .product-card__add");
 const popup = document.querySelector(".modal");
 const close = popup.querySelector(".modal__overlay");
 
