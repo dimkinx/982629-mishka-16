@@ -1,22 +1,3 @@
-// Меню навигации
-
-const navMain = document.querySelector(".navigation");
-const navToggle = document.querySelector(".navigation__toggle");
-
-navMain.classList.remove("navigation--nojs");
-
-navToggle.addEventListener("click", function() {
-  if (navMain.classList.contains("navigation--closed")) {
-    navMain.classList.remove("navigation--closed");
-    navMain.classList.add("navigation--opened");
-  } else {
-    navMain.classList.add("navigation--closed");
-    navMain.classList.remove("navigation--opened");
-  }
-});
-
-// Модальное окно
-
 const links = document.querySelectorAll(".popular-product__order-link, .product-card__add");
 const popup = document.querySelector(".modal");
 const close = popup.querySelector(".modal__overlay");

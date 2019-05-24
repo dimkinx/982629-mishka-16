@@ -5,10 +5,10 @@
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.min.css" rel="stylesheet">
-    <link rel="preload" href="fonts/opensans.woff" as="font">
-    <link rel="preload" href="fonts/opensans.woff2" as="font">
-    <link rel="preload" href="fonts/opensansbold.woff" as="font">
-    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
   <body>
     <div style="display: none;">
@@ -65,7 +65,7 @@
         <h2 class="products-sections__title">Милые штуки ручной <br>работы для дома</h2>
         <ul class="products-sections__list">
           <li class="products-sections__item">
-            <a class="products-sections__link" href="#">
+            <a class="products-sections__link products-sections__link--interior" href="#">
               <span class="products-sections__text">Предметы интерьера</span>
               <svg class="products-sections__svg" width="41" height="63">
                 <use xlink:href="img/sprite.svg#icon-interior"></use>
@@ -73,7 +73,7 @@
             </a>
           </li>
           <li class="products-sections__item">
-            <a class="products-sections__link" href="#">
+            <a class="products-sections__link products-sections__link--toys" href="#">
               <span class="products-sections__text">Детские игрушки</span>
               <svg class="products-sections__svg" width="60" height="60">
                 <use xlink:href="img/sprite.svg#icon-toy"></use>
@@ -157,43 +157,45 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__logo">
-        <a class="logo logo--footer">
-          <svg class="logo__img" width="102" height="34" role="img" aria-label="Логотип интернет-магазина «Мишка»">
-            <use xlink:href="img/sprite.svg#logo-footer"></use>
-          </svg>
-        </a>
-      </div>
-      <ul class="page-footer__social social">
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <svg class="social__icon" width="22" height="22" aria-label="Наша страница в Instagram">
-              <use xlink:href="img/sprite.svg#icon-insta"></use>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <a class="logo logo--footer">
+            <svg class="logo__img" width="102" height="34" aria-label="Логотип интернет-магазина «Мишка»">
+              <use xlink:href="img/sprite.svg#logo-footer"></use>
             </svg>
           </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <svg class="social__icon" width="15" height="28" aria-label="Наша группа в Facebook">
-              <use xlink:href="img/sprite.svg#icon-fb"></use>
+        </div>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon" width="22" height="22" aria-label="Наша страница в Instagram">
+                <use xlink:href="img/sprite.svg#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon" width="15" height="28" aria-label="Наша группа в Facebook">
+                <use xlink:href="img/sprite.svg#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon" width="24" height="20" aria-label="Наша страница в Twitter">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright">
+          <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="copyright__text">Разработано</span>
+            <svg class="copyright__logo" width="28" height="34" aria-label="Логотип HTML Academy">
+              <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
             </svg>
           </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <svg class="social__icon" width="24" height="20" aria-label="Наша страница в Twitter">
-              <use xlink:href="img/sprite.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright">
-        <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="copyright__text">Разработано</span>
-          <svg class="copyright__logo" width="27" height="34" aria-label="Логотип HTML Academy">
-            <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
-          </svg>
-        </a>
+        </div>
       </div>
     </footer>
     <section class="modal">
@@ -220,8 +222,9 @@
       </div>
       <div class="modal__overlay"></div>
     </section>
-    <script src="js/scripts.min.js"></script>
-    <script src="js/picturefill.min.js"></script>
+    <script src="js/navigation.min.js"></script>
+    <script src="js/modal.min.js"></script>
+    <script src="js/picturefill.min.js" ></script>
     <script src="js/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
   </body>
