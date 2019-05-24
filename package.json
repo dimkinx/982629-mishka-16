@@ -23,8 +23,7 @@
     "postcss-sorting": "^5.0.0",
     "posthtml-include": "^1.2.0",
     "stylelint": "^10.0.1",
-    "stylelint-config-htmlacademy": "0.1.x",
-    "svgxuse": "^1.2.6"
+    "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
