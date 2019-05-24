@@ -22,7 +22,18 @@
     & .logo__img {
       width: 102px;
       height: 34px;
+      fill: @dark-grey;
     }
+  }
+
+  .logo--footer[href]:hover .logo__img,
+  .logo--footer[href]:focus .logo__img {
+    fill: @darkest-green;
+    opacity: 1;
+  }
+
+  .logo--footer[href]:active .logo__img {
+    fill: @darkest-green;
   }
 }
 

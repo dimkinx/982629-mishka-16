@@ -52,7 +52,11 @@ gulp.task("webp", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
+  return gulp.src([
+    "source/img/icon-*.svg",
+    "source/img/logo-htmlacademy.svg",
+    "source/img/logo-footer.svg"
+  ])
     .pipe(svgstore({
       inlineSvg: true
     }))
@@ -80,6 +84,8 @@ gulp.task("copy", function () {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "!source/img/icon-*.svg",
+    "!source/img/logo-htmlacademy.svg",
+    "!source/img/logo-footer.svg",
     "!source/**/README"
   ], {
     base: "source"
