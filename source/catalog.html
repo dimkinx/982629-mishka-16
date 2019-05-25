@@ -146,9 +146,12 @@
           <h2 class="manufacture__title">Процесс производства</h2>
           <div class="manufacture__video-container video-container">
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg">
-              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
-              <img class="video-container__preview-img" src="img/video-mobile@1x.jpg" alt="Превью процесса производства">
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.jpg 2x">
+              <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img class="popular-product__img" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Превью процесса производства">
             </picture>
             <button class="video-container__btn"><span class="visually-hidden">Смотреть</span></button>
           </div>
