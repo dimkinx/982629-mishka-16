@@ -2,12 +2,37 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &[href]:hover,
+  &[href]:focus {
+    outline: none;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
-  margin-right: 30px;
+  margin-right: 28px;
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
   color: @black;
+}
+
+.copyright__logo {
+  margin-top: 4px;
+  width: 28px;
+  height: 34px;
+  fill: @light-green;
+}
+
+.copyright:hover .copyright__logo,
+.copyright:focus .copyright__logo {
+  fill: @darkest-green;
+}
+
+.copyright:active .copyright__logo {
+  fill: @darkest-green;
 }
