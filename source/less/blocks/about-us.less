@@ -71,7 +71,7 @@
 
 @media (min-width: @tablet-width) {
   .about-us {
-    padding: 50px 50px 80px;
+    padding-bottom: 28px;
   }
 
   .about-us__title {
@@ -86,20 +86,21 @@
   }
 
   .about-us__item {
+    margin-bottom: 57px;
     padding-top: 53px;
     font-size: 20px;
     line-height: 22px;
     break-inside: avoid;
+  }
 
-    &:not(:last-child) {
-      margin-bottom: 57px;
-    }
+  .about-us__list .about-us__item {
+    margin-bottom: 57px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .about-us {
-    padding: 50px 50px 65px;
+    padding-bottom: 35px;
   }
 
   .about-us__title {
