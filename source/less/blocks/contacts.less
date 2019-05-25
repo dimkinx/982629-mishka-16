@@ -1,23 +1,24 @@
 .contacts {
+  padding-bottom: 30px;
   background-color: @white;
 }
 
 .contacts__wrapper {
   margin: 0 auto;
   padding: 30px;
-  width: 260px;
+  width: @mobile-width;
 }
 
 .contacts__title {
   .no-indents();
-  margin-bottom: 30px;
+  margin: 10px 0 25px;
   font-weight: 700;
   font-size: 18px;
 }
 
 .contacts__list {
   .no-indents();
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   display: flex;
   flex-wrap: wrap;
   color: @dark-grey;
@@ -35,12 +36,24 @@
 }
 
 .contacts__value-link {
+  .no-indents();
   padding-bottom: 4px;
   color: @dark-grey;
   border-bottom: 1px solid @light-green;
+
+  &:hover,
+  &:focus {
+    color: @light-green;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__map {
+  margin-bottom: 30px;
   width: 100%;
   height: 457px;
   background-color: @light-grey;
@@ -51,15 +64,19 @@
 }
 
 .contacts__write-us-link {
-  margin: 30px auto 40px;
+  margin: 0 auto 10px;
   width: 260px;
 }
 
 
 @media (min-width: @tablet-width) {
+  .contacts {
+    padding-bottom: 55px;
+  }
+
   .contacts__wrapper {
     padding: 50px;
-    width: 668px;
+    width: @tablet-width;
   }
 
   .contacts__list {
@@ -69,16 +86,36 @@
   }
 
   .contacts__title {
-    padding: 15px 0;
+    .no-indents();
+    margin-bottom: 35px;
+    padding: 10px 0;
+    position: relative;
     font-size: 43px;
-    line-height: 50px;
+    line-height: 56px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 47px;
+      height: 82px;
+      background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='46.68px' height='81.691px' viewBox='-11.34 -28.346 46.68 81.691' enable-background='new -11.34 -28.346 46.68 81.691' xml:space='preserve'%3E%3Cg id='miu'%3E%3Cg id='Artboard-1' transform='translate(-755.000000, -443.000000)'%3E%3Cg id='slice' transform='translate(215.000000, 119.000000)'%3E%3C/g%3E%3Cg id='editor-flag-triangle-notification-glyph'%3E%3Cpath fill='%2363D1BB' d='M751.439,418.545v38.9l38.9-19.451L751.439,418.545z M743.66,496.346v-81.691h3.805v81.691H743.66z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3Cg%3E%3Crect x='-11.34' y='-28.346' fill='%23231F20' width='3.805' height='81.691'/%3E%3C/g%3E%3C/svg%3E%0A");      background-repeat: repeat-x;
+      background-position: 50% 0;
+      background-size: contain;
+    }
   }
 
   .contacts__value {
     width: 257px;
   }
 
+  .contacts__map {
+    margin-bottom: 50px;
+  }
+
   .contacts__write-us-link {
+    margin: 0 auto;
     width: 226px;
   }
 }
@@ -88,8 +125,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-bottom: 55px;
-    min-height: 407px;
+    padding: 70px 50px 110px;
   }
 
   .contacts__wrapper {
@@ -98,9 +134,25 @@
   }
 
   .contacts__title {
-    padding: 0 0 0 175px;
+    .no-indents();
+    margin: 60px 0 40px;
+    padding: 12px 0 10px 175px;
+    position: relative;
     font-size: 53px;
     line-height: 57px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      right: auto;
+      left: 62px;
+      width: 47px;
+      height: 82px;
+      background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='46.68px' height='81.691px' viewBox='-11.34 -28.346 46.68 81.691' enable-background='new -11.34 -28.346 46.68 81.691' xml:space='preserve'%3E%3Cg id='miu'%3E%3Cg id='Artboard-1' transform='translate(-755.000000, -443.000000)'%3E%3Cg id='slice' transform='translate(215.000000, 119.000000)'%3E%3C/g%3E%3Cg id='editor-flag-triangle-notification-glyph'%3E%3Cpath fill='%2363D1BB' d='M751.439,418.545v38.9l38.9-19.451L751.439,418.545z M743.66,496.346v-81.691h3.805v81.691H743.66z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3Cg%3E%3Crect x='-11.34' y='-28.346' fill='%23231F20' width='3.805' height='81.691'/%3E%3C/g%3E%3C/svg%3E%0A");      background-repeat: repeat-x;
+      background-position: 50% 0;
+      background-size: contain;
+    }
   }
 
   .contacts__list {
@@ -118,13 +170,13 @@
 
   .contacts__map {
     position: absolute;
-    top: 0;
+    top: 80px;
     right: 50px;
     width: 525px;
   }
 
   .contacts__write-us-link {
-    margin: auto 0 0 175px;
-    width: 226px;
+    margin: 75px 0 0 175px;
+    width: 228px;
   }
 }
