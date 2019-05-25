@@ -44,11 +44,30 @@
 }
 
 .product-card__add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: auto;
   width: 30px;
   height: 30px;
   line-height: 0;
-  background-color: @black;
+  outline: none;
+}
+
+.product-card__add-icon {
+  width: 21px;
+  height: 19px;
+  fill: @darkest-grey-20;
+}
+
+.product-card__add:hover .product-card__add-icon,
+.product-card__add:focus .product-card__add-icon {
+  fill: @light-green;
+}
+
+.product-card__add:active .product-card__add-icon {
+  fill: @light-green;
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {

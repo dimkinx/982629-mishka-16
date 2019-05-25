@@ -51,6 +51,14 @@
   }
 }
 
+.navigation__link-svg {
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  fill: @darkest-grey-20;
+}
+
 .navigation__link[href]:hover .navigation__link-svg,
 .navigation__link[href]:focus .navigation__link-svg {
   fill: @light-green;
@@ -59,14 +67,6 @@
 .navigation__link:active .navigation__link-svg {
   fill: @light-green;
   opacity: 0.3;
-}
-
-.navigation__link-svg {
-  display: block;
-  position: absolute;
-  top: 4px;
-  left: 3px;
-  fill: @darkest-grey-20;
 }
 
 .navigation__info {
