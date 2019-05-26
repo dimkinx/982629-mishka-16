@@ -38,7 +38,7 @@
 
   &:hover,
   &:focus {
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 10px 0 @black-10;
   }
 
   &:active {
@@ -156,14 +156,16 @@
   }
 
   .product-card__picture {
+    flex-shrink: 0;
     width: 315px;
     height: 463px;
   }
 
   .product-card__inner {
+    justify-content: space-between;
+    flex-shrink: 1;
     width: 315px;
     height: 100%;
-    justify-content: space-between;
   }
 
   .product-card__desc {
