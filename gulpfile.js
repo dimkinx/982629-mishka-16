@@ -46,7 +46,11 @@ gulp.task("images", function () {
 });
 
 gulp.task("webp", function () {
-  return gulp.src("build/img/**/*.{png,jpg}")
+  return gulp.src([
+    "build/img/video-*.jpg",
+    "build/img/photo-*.jpg",
+    "build/img/triple-*.jpg"
+  ])
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("build/img"));
 });
