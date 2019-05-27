@@ -63,8 +63,8 @@
       <h1 class="page-main__title">Вязание на заказ</h1>
       <p class="page-main__lead">Мы будем рады воплотить в жизнь ваши&nbsp;пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="page-main__order-form order-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="order-form__fieldset order-form__fieldset--type">
-          <legend class="order-form__title">Тип</legend>
+        <div class="order-form__fieldset order-form__fieldset--type">
+          <h2 class="order-form__title">Тип</h2>
           <ul class="order-form__list">
             <li class="order-form__item">
               <input class="order-form__input" id="type-1" type="radio" name="product-type" value="аксессуар для интерьера" checked>
@@ -75,10 +75,10 @@
               <label class="order-form__label" for="type-2">Детская игрушка</label>
             </li>
           </ul>
-        </fieldset>
+        </div>
         <div class="order-form__wrapper">
-          <fieldset class="order-form__fieldset order-form__fieldset--color">
-            <legend class="order-form__title">Цвет</legend>
+          <div class="order-form__fieldset order-form__fieldset--color">
+            <h2 class="order-form__title">Цвет</h2>
             <ul class="order-form__list">
               <li class="order-form__item">
                 <input class="order-form__input" id="color-1" type="checkbox" name="product-color" value="белый" checked>
@@ -97,7 +97,7 @@
                 <label class="order-form__label" for="color-4">Черный</label>
               </li>
               <li class="order-form__item">
-                <input class="order-form__input" id="color-5" type="checkbox" name="product-color" value="розовый">
+                <input class="order-form__input" id="color-5" type="checkbox" name="product-color" value="розовый" disabled>
                 <label class="order-form__label" for="color-5">Розовый</label>
               </li>
               <li class="order-form__item">
@@ -105,10 +105,10 @@
                 <label class="order-form__label" for="color-6">Оранжевый</label>
               </li>
             </ul>
-          </fieldset>
+          </div>
         </div>
-        <fieldset class="order-form__fieldset order-form__fieldset--full-name">
-          <legend class="order-form__title">ФИО</legend>
+        <div class="order-form__fieldset order-form__fieldset--full-name">
+          <h2 class="order-form__title">ФИО</h2>
           <ul class="order-form__list">
             <li class="order-form__item">
               <label class="order-form__label" for="first-name">Имя:</label>
@@ -123,20 +123,26 @@
               <input class="order-form__input-text" id="patronymic" type="text" name="patronymic" placeholder="Отчество, если желаете">
             </li>
           </ul>
-        </fieldset>
+        </div>
         <div class="order-form__wrapper">
           <div class="order-form__fieldset order-form__fieldset--phone-number">
             <label class="order-form__title" for="phone-number">Тел</label>
-            <input class="order-form__input-text" id="phone-number" type="tel" name="phone-number" pattern="\+7\s[0-9]{3}\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            <input class="order-form__input-text" id="phone-number" type="tel" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            <svg class="order-form__icon" width="26" height="26">
+              <use xlink:href="img/sprite.svg#icon-phone"></use>
+            </svg>
           </div>
           <div class="order-form__fieldset order-form__fieldset--e-mail">
             <label class="order-form__title" for="e-mail">E-mail</label>
-            <input class="order-form__input-text" id="e-mail" type="email" name="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ваш Email*" required>
+            <input class="order-form__input-text" id="e-mail" type="email" name="e-mail" placeholder="Ваш Email*" required>
+            <svg class="order-form__icon" width="32" height="32">
+              <use xlink:href="img/sprite.svg#icon-mail"></use>
+            </svg>
           </div>
         </div>
         <div class="order-form__fieldset order-form__fieldset--order-textarea">
           <label class="order-form__title" for="order-textarea">Доп</label>
-          <textarea class="order-form__input-textarea" id="order-textarea" name="order-text" rows="5" placeholder="Опишите все ваши пожелания&nbsp;к&nbsp;заказу"></textarea>
+          <textarea class="order-form__input-textarea" id="order-textarea" name="order-text" rows="6" placeholder="Опишите все ваши пожелания&nbsp;к&nbsp;заказу"></textarea>
         </div>
         <div class="order-form__inner">
           <small class="order-form__required-fields">*Поля обязательны для заполнения</small>
