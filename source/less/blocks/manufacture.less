@@ -1,18 +1,29 @@
-.manufacture {
+.manufacture__wrapper {
+  width: 260px;
   border: 1px solid @line-grey;
 }
 
 .manufacture__inner {
   padding: 26px 33px;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .manufacture__title {
   position: relative;
-  margin: 26px 33px;
+  margin: 24px 33px;
   padding-left: 57px;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+  z-index: 1;
 
   &::after {
     content: "";
@@ -30,8 +41,6 @@
 .manufacture__video-container {
   .no-indents();
   width: 260px;
-  height: 150px;
-  overflow: hidden;
 }
 
 .manufacture__show-notes {
@@ -46,44 +55,54 @@
   margin-bottom: 5px;
 }
 
+@media (max-width: @mobile-width-only) {
+  .manufacture__show-notes {
+    padding-right: 4px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .manufacture {
-    padding-top: 0;
+    margin-bottom: 15px;
+    padding-top: 5px;
     border: none;
   }
 
   .manufacture__wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
+    width: 668px;
     border: 1px solid @line-grey;
+  }
+
+  .manufacture__video-container {
+    width: 666px;
   }
 
   .manufacture__inner {
     order: 2;
+    padding: 20px 40px 40px;
   }
 
   .manufacture__title {
     margin-bottom: 0;
-    padding: 10px 0 10px 65px;
+    padding: 15px 0 10px 70px;
     order: 1;
     font-size: 20px;
 
     &::after {
       content: "";
       position: absolute;
-      top: 5px;
-      left: 0;
+      top: 10px;
+      left: 2px;
       width: 40px;
       height: 40px;
     }
   }
 
-  .manufacture__video-container {
-    width: 666px;
-    height: auto;
-  }
-
   .manufacture__show-notes {
+    margin-bottom: 35px;
     font-size: 15px;
     line-height: 30px;
   }
@@ -91,29 +110,43 @@
 
 @media (min-width: @desktop-width) {
   .manufacture {
-    min-height: 455px;
+    margin-bottom: 55px;
   }
 
   .manufacture__wrapper {
     position: relative;
     padding-left: 682px;
-    min-height: 455px;
+    width: 1050px;
+  }
+
+  .manufacture__video-container {
+    width: 682px;
+  }
+
+  .manufacture__title {
+    margin: 45px 75px 0;
+    padding: 51px 0 0;
+    order: 0;
+
+    &::after {
+      top: 0;
+      left: 0;
+    }
   }
 
   .manufacture__inner {
     margin-top: auto;
-    padding: 30px 80px;
-    order: 0;
-  }
-
-  .manufacture__title {
-    margin: 45px 80px 0;
-    padding: 65px 0 0;
+    padding: 35px 58px 58px 76px;
     order: 0;
   }
 
   .manufacture__show-notes {
+    margin-bottom: 45px;
     font-size: 15px;
     line-height: 30px;
+  }
+
+  .manufacture__order-link {
+    margin-bottom: 0;
   }
 }
